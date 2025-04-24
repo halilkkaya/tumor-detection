@@ -11,11 +11,6 @@ Bu proje, tümör tespiti yapmak amacıyla geliştirilmiştir. Projede **MobileN
   - Yüksek hassasiyetli parametreler
   - Düşük hassasiyetli parametreler
 
-## Gereksinimler
-
-Projenin çalıştırılması için aşağıdaki gereksinimler karşılanmalıdır:
-
-- MATLAB (proje tamamen MATLAB dilinde yazılmıştır)
 
 ## Çalıştırma
 
@@ -36,7 +31,7 @@ Projenin çalıştırılması için aşağıdaki gereksinimler karşılanmalıd�
 
 ## Sonuçlar
 
-Bu projede kullanılan farklı mimariler ve optimizasyon yöntemleri karşılaştırılmış olup, detaylı sonuçlar raporda yer almaktadır.
+Bu projede kullanılan farklı mimariler ve optimizasyon yöntemleri karşılaştırılmış olup, detaylı sonuçlar görsellerde yer almaktadır.
 
 ## Katkıda Bulunma
 
