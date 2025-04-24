@@ -348,7 +348,7 @@ grid on;
 disp('Transfer öğrenme modelleri hazırlanıyor...');
 
 % Kullanılacak transfer öğrenme modelleri
-transferModels = {'mobilenetv2', 'alexnet', 'resnet50'};
+transferModels = {'mobilenetv2'};
 
 % Her bir transfer modeli için eğitim
 for modelIdx = 1:length(transferModels)
@@ -362,16 +362,6 @@ for modelIdx = 1:length(transferModels)
             inputLayerName = 'input_1';
             classLayerName = 'Logits';
             outputLayerName = 'ClassificationLayer_Logits';
-        case 'alexnet'
-            net = alexnet;
-            inputLayerName = 'data';
-            classLayerName = 'fc8';
-            outputLayerName = 'output';
-        case 'resnet50'
-            net = resnet50;
-            inputLayerName = 'input_1';
-            classLayerName = 'fc1000';
-            outputLayerName = 'ClassificationLayer_fc1000';
     end
     
     % Ağ yapısını analiz et
@@ -420,12 +410,6 @@ for modelIdx = 1:length(transferModels)
             
             % Modele göre son katmanları değiştir
             if strcmp(modelName, 'mobilenetv2')
-                lgraph = replaceLayer(lgraph, classLayerName, newLayers(1));
-                lgraph = replaceLayer(lgraph, outputLayerName, newLayers(3));
-            elseif strcmp(modelName, 'alexnet')
-                lgraph = replaceLayer(lgraph, classLayerName, newLayers(1));
-                lgraph = replaceLayer(lgraph, outputLayerName, newLayers(3));
-            elseif strcmp(modelName, 'resnet50')
                 lgraph = replaceLayer(lgraph, classLayerName, newLayers(1));
                 lgraph = replaceLayer(lgraph, outputLayerName, newLayers(3));
             end
