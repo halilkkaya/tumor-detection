@@ -31,7 +31,7 @@ Bu proje, tümör tespiti yapmak amacıyla geliştirilmiştir. Projede **MobileN
 
 ## Sonuçlar
 
-Bu projede kullanılan farklı mimariler ve optimizasyon yöntemleri karşılaştırılmış olup, detaylı sonuçlar görsellerde yer almaktadır.
+Bu projede kullanılan farklı mimariler ve optimizasyon yöntemleri karşılaştırılmış olup, detaylı sonuçlar performans klasöründe yer almaktadır.
 
 ## Katkıda Bulunma
 
